@@ -12,6 +12,8 @@ body {
     font-family: 'Cardo', serif;
 }
 
+
+// Navbar start
 .header {
     background: $off-white;
     clear: both;
@@ -22,11 +24,13 @@ body {
         float: left;
         margin: 1rem 2rem;
         max-width: 20rem;
+        padding-top: 6px;
     }
 
     #navlist {
         float: right;
-
+        padding-top: 8px;
+        padding-right: 10px;
 
         li {
             font-size: 1.5rem;
@@ -39,11 +43,45 @@ body {
             a:link,
             :visited {
                 color: $navy-blue;
-                line-height: 100px;
-                height: 100px;
+                line-height: 90px;
+                height: 90px;
                 text-decoration: none;
             }
         }
     }
+}
 
+// Navbar End
+
+//MainPage Start
+
+.main {
+    height: 90vh;
+    background-color: $navy-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $off-white;
+    background-image: url('../img/header-background.jpg');
+    background-color: rgba(10, 28, 62, 0.25);
+    background-blend-mode: multiply;
+    object-fit: cover;
+    text-align: center;
+}
+
+.main-intro {
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 3.5rem;
+        padding-bottom: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
