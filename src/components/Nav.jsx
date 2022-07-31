@@ -1,13 +1,19 @@
 import React from "react";
+// import images
+import logo from "../img/SetSail-logo2.png"
 
 function Navbar() {
     return (
         <div>
-            <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+            <div class="header">
+                <img id="logo" src={logo} />
+                <ul id="navlist">
+                    <li id="active"><a href="#" id="current">Port</a></li>
+                    <li><a href="#">The Experience</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Our Media</a></li>
+                    <li><a href="#">Get in Touch</a></li>
+                </ul>
             </div>
         </div>
     )
